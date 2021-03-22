@@ -26,8 +26,13 @@ public class MatchTickets {
         }
 
         switch (typeTicket) {
-            case "VIP" -> ticket = 499.99;
-            case "Normal" -> ticket = 249.99;
+            case "VIP":
+                ticket = 499.99;
+                break;
+
+            case "Normal":
+                ticket = 249.99;
+                break;
         }
 
         double endSum = ticket * numPeople;
